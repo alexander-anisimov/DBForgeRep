@@ -3,6 +3,7 @@
   [Win] [int] NULL,
   [Defeat] [int] NULL,
   [StandOff] [int] NULL,
+  [DBForgeCheck] [int] NULL,
   CONSTRAINT [PK_Players] PRIMARY KEY CLUSTERED ([PlayerID]) WITH (FILLFACTOR = 90)
 )
 ON [PRIMARY]
