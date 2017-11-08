@@ -1,0 +1,3 @@
+﻿CREATE USER [SQL#]
+  FOR LOGIN [SQL#]
+GO

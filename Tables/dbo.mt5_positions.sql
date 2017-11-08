@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[mt5_positions] (
+  [Position_ID] [bigint] NOT NULL,
+  [Position] [bigint] NOT NULL,
+  [ExternalID] [nvarchar](32) NOT NULL,
+  [Login] [bigint] NOT NULL,
+  [TIMESTAMP] [bigint] NOT NULL,
+  [Symbol] [nvarchar](32) NOT NULL,
+  [Action] [int] NOT NULL,
+  [Digits] [int] NOT NULL,
+  [DigitsCurrency] [int] NOT NULL,
+  [ContractSize] [float] NOT NULL,
+  [TimeCreate] [datetime] NOT NULL,
+  [TimeUpdate] [datetime] NOT NULL,
+  [PriceOpen] [float] NOT NULL,
+  [PriceCurrent] [float] NOT NULL,
+  [PriceSL] [float] NOT NULL,
+  [PriceTP] [float] NOT NULL,
+  [Volume] [bigint] NOT NULL,
+  [Profit] [float] NOT NULL,
+  [Storage] [float] NOT NULL,
+  [RateProfit] [float] NOT NULL,
+  [RateMargin] [float] NOT NULL,
+  [ExpertID] [bigint] NOT NULL,
+  [ExpertPositionID] [bigint] NOT NULL,
+  [Comment] [nvarchar](32) NOT NULL,
+  [ActivationMode] [int] NOT NULL,
+  [ActivationTime] [bigint] NOT NULL,
+  [ActivationPrice] [float] NOT NULL,
+  [ActivationFlags] [int] NOT NULL,
+  CONSTRAINT [PK_mt5_positions] PRIMARY KEY CLUSTERED ([Position_ID]) WITH (FILLFACTOR = 90)
+)
+ON [PRIMARY]
+GO
